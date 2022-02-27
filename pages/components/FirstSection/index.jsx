@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
-const Bt = styled.button`
-    background-color: #c03737;
+const FirstSect = styled.section`
+    background-color: #7cbba3;
     box-shadow: 0px 0px 5px black;
-    height: 50px;
+    height: 80vh;
+    width:100%;
+    z-index: 1;
+    margin-top: -15px;
     text-align: center;
-    border-bottom-left-radius: 50px 20px;
-    border-bottom-right-radius: 50px 20px;
     position: fixed;
-    margin-left: 40%;
 `;
 
 const Title = styled.h1`
@@ -18,16 +18,16 @@ const Title = styled.h1`
     font-family: 'Montserrat Alternates', sans-serif;
 `
 
-export default function Button() {
+export default function FirstSection() {
 
     return (
-        <div className="Bt">
-            <Bt>
+        <div className="FirstSect">
+            <FirstSect>
                 <Title>
                     Clique
                 </Title>
 
-            </Bt>
+            </FirstSect>
 
         </div>
     )
