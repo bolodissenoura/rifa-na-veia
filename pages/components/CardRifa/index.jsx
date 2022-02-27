@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const ElementCardRifa = styled.div`
     margin-top: 13px;
     background-color: #b1b1b1;
-    padding: 40px;
     width: 100%;
     height: 10vh;
     margin-left: auto;

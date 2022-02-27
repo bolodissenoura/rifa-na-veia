@@ -5,8 +5,8 @@ const ElementCardSection = styled.div`
     margin-top: 13px;
     background-color: #fff;
     padding: 40px;
-    width: 80%;
-    height: 62vh;
+    width: 70%;
+    height: 60vh;
     overflow-y: scroll;
     margin-left: auto;
     margin-right: auto; 
@@ -27,7 +27,7 @@ export default function CardSection() {
                 <CardRifa/>
                 <CardRifa/>
                 <CardRifa/>
-                <CardRifa/>
+                
 
 
             </ElementCardSection>
