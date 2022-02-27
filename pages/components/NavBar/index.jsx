@@ -27,7 +27,7 @@ export default function NavBar() {
         <div className="Nav">
             <Nav>
                 <Title>
-                    {/* Rifas na Veia */}
+                    
                 </Title>
             </Nav>
         </div>
