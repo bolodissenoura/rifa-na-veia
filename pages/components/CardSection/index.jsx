@@ -2,12 +2,14 @@ import styled from 'styled-components';
 import CardRifa from '../CardRifa'
 
 const ElementCardSection = styled.div`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 50px;
     margin-top: 13px;
-    background-color: #fff;
-    padding: 40px;
-    width: 70%;
-    height: 60vh;
-    overflow-y: scroll;
+    background-color: #121212;
+    padding: 43px;
+    width: 73%;
+    height: auto;
     margin-left: auto;
     margin-right: auto; 
     font-size:3.5em;
@@ -21,15 +23,12 @@ export default function CardSection() {
     return (
         <div className="ElementCardSection">
             <ElementCardSection>
-                <CardRifa/>
-                <CardRifa/>
-                <CardRifa/>
-                <CardRifa/>
-                <CardRifa/>
-                <CardRifa/>
-                
-
-
+                <CardRifa />
+                <CardRifa />
+                <CardRifa />
+                <CardRifa />
+                <CardRifa />
+                <CardRifa />
             </ElementCardSection>
         </div>
     )
