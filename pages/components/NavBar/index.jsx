@@ -44,7 +44,7 @@ const Nav = styled.div`
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: #616161;
+        background-color: #fff;
         transition-duration: .25s;
     }
     .menu__btn > span::before {
@@ -72,7 +72,7 @@ const Nav = styled.div`
     .menu__item {
         display: block;
         padding: 12px 24px;
-        color: #EEE6CE;
+        color: #fff;
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
         font-weight: 600;
@@ -80,7 +80,7 @@ const Nav = styled.div`
         transition-duration: .25s;
     }
     .menu__item:hover {
-    background-color: #CFD8DC;
+    background-color: #272727;
     }
 
 
@@ -104,7 +104,7 @@ export default function NavBar() {
                         <li><a class="menu__item" href="#">Contato</a></li>
                         <li><a class="menu__item" href="#">Regras</a></li>
                         <li><a class="menu__item" href="#">Ganhadores</a></li>
-                        <li><a class="menu__item" href="#">Dúvidas Frequentes</a></li>
+                        <li><a class="menu__item" href="#">Meus Bilhetes</a></li>
                         
                     </ul>
                 </div>

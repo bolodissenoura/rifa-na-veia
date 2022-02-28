@@ -1,20 +1,25 @@
 import styled from 'styled-components';
-import CardRifa from '../CardRifa'
+
 
 const ElementCardSection = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 50px;
-    margin-top: 13px;
-    background-color: #121212;
+    gap: 20px;
     padding: 43px;
-    width: 73%;
+    width: auto;
     height: auto;
-    margin-left: auto;
-    margin-right: auto; 
-    font-size:3.5em;
-    padding-top: 7px;
-    font-family: 'Montserrat Alternates', sans-serif;
+    .card{
+        background-color: #121212;
+        height: 450px;
+    }
+    .img-content{
+        background-image: url('dinheiro.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width:auto;
+        height:200px;
+    }
 `
 
 
@@ -23,12 +28,22 @@ export default function CardSection() {
     return (
         <div className="ElementCardSection">
             <ElementCardSection>
-                <CardRifa />
-                <CardRifa />
-                <CardRifa />
-                <CardRifa />
-                <CardRifa />
-                <CardRifa />
+                <div className="card">
+                    <div className="img-content">
+                    </div>
+
+                </div>
+                <div className="card">
+                    <div className="img-content">
+
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="img-content">
+
+                    </div>
+                </div>
+                
             </ElementCardSection>
         </div>
     )
