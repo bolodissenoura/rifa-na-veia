@@ -94,17 +94,17 @@ export default function NavBar() {
     return (
         <div className="Nav">
             <Nav>
-                <div class="hamburger-menu">
+                <div className="hamburger-menu">
                     <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
+                    <label className="menu__btn" for="menu__toggle">
                         <span></span>
                     </label>
 
-                    <ul class="menu__box">
-                        <li><a class="menu__item" href="#">Contato</a></li>
-                        <li><a class="menu__item" href="#">Regras</a></li>
-                        <li><a class="menu__item" href="#">Ganhadores</a></li>
-                        <li><a class="menu__item" href="#">Meus Bilhetes</a></li>
+                    <ul className="menu__box">
+                        <li><a className="menu__item" href="#">Contato</a></li>
+                        <li><a className="menu__item" href="#">Regras</a></li>
+                        <li><a className="menu__item" href="#">Ganhadores</a></li>
+                        <li><a className="menu__item" href="#">Meus Bilhetes</a></li>
                         
                     </ul>
                 </div>
