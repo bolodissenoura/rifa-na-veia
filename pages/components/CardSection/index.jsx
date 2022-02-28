@@ -1,5 +1,15 @@
 import styled from 'styled-components';
 
+const ElementCenterSection = styled.div`
+    width: 70%; 
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    @media only screen and (max-width: 600px) {
+        width: auto !important; 
+    }
+`
 
 const ElementCardSection = styled.div`
     display: grid;
@@ -9,7 +19,8 @@ const ElementCardSection = styled.div`
     width: auto;
     height: auto;
     .card{
-        background-color: #121212;
+        background-color: #fff;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         height: 450px;
     }
     .img-content{
@@ -23,29 +34,32 @@ const ElementCardSection = styled.div`
 `
 
 
+
 export default function CardSection() {
 
     return (
-        <div className="ElementCardSection">
-            <ElementCardSection>
-                <div className="card">
-                    <div className="img-content">
-                    </div>
-
-                </div>
-                <div className="card">
-                    <div className="img-content">
+        <>
+            <ElementCenterSection>
+                <ElementCardSection>
+                    <div className="card">
+                        <div className="img-content">
+                        </div>
 
                     </div>
-                </div>
-                <div className="card">
-                    <div className="img-content">
+                    <div className="card">
+                        <div className="img-content">
 
+                        </div>
                     </div>
-                </div>
-                
-            </ElementCardSection>
-        </div>
+                    <div className="card">
+                        <div className="img-content">
+
+                        </div>
+                    </div>
+
+                </ElementCardSection>
+            </ElementCenterSection>
+        </>
     )
 }
 
