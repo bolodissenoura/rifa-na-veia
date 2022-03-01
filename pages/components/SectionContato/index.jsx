@@ -31,14 +31,14 @@ const ElementImg = styled.div`
 
 
 
-export default function Section() {
+export default function SectionContato() {
 
     return (
         <div className="ElementSection">
             <ElementSection>
                 <ElementImg>
-                    <h1>BOA SORTE 🍀</h1>
-                    <p>Um real pode mudar sua vida pra sempre.</p>
+                    <h1>CONTATO 💬</h1>
+                    <p>Tire sua dúvida conosco <br /> por onde preferir.</p>
                 </ElementImg>
             </ElementSection>
 

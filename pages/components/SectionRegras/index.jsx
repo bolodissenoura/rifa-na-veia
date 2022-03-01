@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import CardSection from '../CardSection';
 
 const ElementSection = styled.section`
     background-color: #fff;
@@ -31,14 +30,14 @@ const ElementImg = styled.div`
 
 
 
-export default function Section() {
+export default function SectionRegras() {
 
     return (
         <div className="ElementSection">
             <ElementSection>
                 <ElementImg>
-                    <h1>BOA SORTE 🍀</h1>
-                    <p>Um real pode mudar sua vida pra sempre.</p>
+                    <h1>REGRAS 📘</h1>
+                    <p>Primeira vez? <br /> Não se preocupe, te explico como funciona:</p>
                 </ElementImg>
             </ElementSection>
 

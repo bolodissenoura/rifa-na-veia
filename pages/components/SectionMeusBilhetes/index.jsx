@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import CardSection from '../CardSection';
+import FormMeusBilhetes from '../FormMeusBilhetes';
 
 const ElementSection = styled.section`
     background-color: #fff;
@@ -31,19 +31,18 @@ const ElementImg = styled.div`
 
 
 
-export default function Section() {
+export default function SectionMeusBilhetes() {
 
     return (
         <div className="ElementSection">
             <ElementSection>
                 <ElementImg>
-                    <h1>BOA SORTE 🍀</h1>
-                    <p>Um real pode mudar sua vida pra sempre.</p>
+                    <h1>BILHETES 📜</h1>
+                    <p>Insira seu número e veja <br /> os seus bilhetes ativos.</p>
                 </ElementImg>
+                <br />
+                <FormMeusBilhetes/>
             </ElementSection>
-
-            
-
         </div>
     )
 }

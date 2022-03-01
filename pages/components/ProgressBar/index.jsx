@@ -33,6 +33,8 @@ h2{
 }
 span{
     padding-left: 20px;
+    padding-bottom: 5px;
+    font-size: 13px;
 }
 
 `

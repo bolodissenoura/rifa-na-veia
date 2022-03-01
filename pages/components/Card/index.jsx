@@ -7,6 +7,7 @@ const ElementCard = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     padding: 43px;
+    text-align: center;
     width: auto;
     height: auto;
     .card{

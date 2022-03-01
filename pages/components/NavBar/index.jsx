@@ -10,6 +10,11 @@ const Nav = styled.div`
     z-index: 99;
     top: 0;
 
+    img{
+        width: 150px;
+        margin-top: -41px;
+    }
+
 
     #menu__toggle {
         opacity: 0;
@@ -99,12 +104,14 @@ export default function NavBar() {
                     <label className="menu__btn" htmlFor="menu__toggle">
                         <span></span>
                     </label>
+                    <a href="/"><img src="logo-jetta.png" alt="" /></a>
 
                     <ul className="menu__box">
-                        <li><a className="menu__item" href="#">Contato</a></li>
-                        <li><a className="menu__item" href="#">Regras</a></li>
-                        <li><a className="menu__item" href="#">Ganhadores</a></li>
-                        <li><a className="menu__item" href="#">Meus Bilhetes</a></li>
+                        <li><a className="menu__item" href="/">Participar</a></li>
+                        <li><a className="menu__item" href="/contato">Contato</a></li>
+                        <li><a className="menu__item" href="/regras">Regras</a></li>
+                        <li><a className="menu__item" href="/ganhadores">Ganhadores</a></li>
+                        <li><a className="menu__item" href="/meus-bilhetes">Meus Bilhetes</a></li>
                         
                     </ul>
                 </div>
