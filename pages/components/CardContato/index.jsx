@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Link from 'next/link'
 
 const ElementCardContato = styled.div`
     text-align: center;
@@ -44,10 +45,16 @@ export default function CardContato() {
     return (
         <>
             <ElementCardContato>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-whatsapp"></a>
-                <a href="#" class="fa fa-envelope"></a>
-                
+                <Link href="#">
+                    <a  className="fa fa-instagram"></a>
+                </Link>
+                <Link href="#">
+                    <a  className="fa fa-whatsapp"></a>
+                </Link>
+                <Link href="#">
+                    <a  className="fa fa-envelope"></a>
+                </Link>
+
             </ElementCardContato>
         </>
     )

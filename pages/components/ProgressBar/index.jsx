@@ -50,8 +50,8 @@ export default function ProgressBar() {
             <ElementProgressBar>
 
                 <h2>Quase esgotado</h2>
-                <div class="progress">
-                    <div class="progress-value"></div>
+                <div className="progress">
+                    <div className="progress-value"></div>
                     <p><span>80%</span></p>
                 </div>
 

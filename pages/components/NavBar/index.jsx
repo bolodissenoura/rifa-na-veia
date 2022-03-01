@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import Link from 'next/link'
+
 
 const Nav = styled.div`
     background-color: #121212;
@@ -104,15 +106,36 @@ export default function NavBar() {
                     <label className="menu__btn" htmlFor="menu__toggle">
                         <span></span>
                     </label>
-                    <a href="/"><img src="logo-jetta.png" alt="" /></a>
+                    <Link href="/">
+                        <a ><img src="logo-jetta.png" alt="" /></a>
+                    </Link>
 
                     <ul className="menu__box">
-                        <li><a className="menu__item" href="/">Participar</a></li>
-                        <li><a className="menu__item" href="/contato">Contato</a></li>
-                        <li><a className="menu__item" href="/regras">Regras</a></li>
-                        <li><a className="menu__item" href="/ganhadores">Ganhadores</a></li>
-                        <li><a className="menu__item" href="/meus-bilhetes">Meus Bilhetes</a></li>
-                        
+                        <li>
+                            <Link href="/">
+                                <a className="menu__item" >Participar</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/contato">
+                                <a className="menu__item">Contato</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/regras">
+                                <a className="menu__item">Regras</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/ganhadores">
+                                <a className="menu__item">Ganhadores</a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/meus-bilhetes">
+                                <a className="menu__item">Meus Bilhetes</a>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </Nav>

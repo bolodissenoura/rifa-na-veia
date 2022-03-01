@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 
 const ElementFooter = styled.div`
@@ -27,7 +28,9 @@ export default function FooterSection() {
     return (
         <div className="ElementFooter">
             <ElementFooter>
-                <a target="_blank" href="https://bolodissenoura.github.io/daniellimae/"><h1>© 2022 Copyright: Daniel Lima </h1></a>
+                <Link href="https://bolodissenoura.github.io/daniellimae/">
+                    <a target="_blank" rel="noreferrer" ><h1>© 2022 Copyright: Daniel Lima </h1></a>
+                </Link>
             </ElementFooter>
         </div>
     )
