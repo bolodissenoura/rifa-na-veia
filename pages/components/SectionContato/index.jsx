@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import CardSection from '../CardSection';
 
 const ElementSection = styled.section`
     background-color: #fff;
@@ -12,8 +11,7 @@ const ElementSection = styled.section`
 
 const ElementImg = styled.div`
     margin-top:50px;
-    img{
-    }
+    
     h1{
         padding-top: 50px;
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";

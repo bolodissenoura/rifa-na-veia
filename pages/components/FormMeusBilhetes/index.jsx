@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Jquery from '../Jquery';
 
 const ElementForm = styled.div`
     .no-arrow {
@@ -22,7 +21,6 @@ export default function FormMeusBilhetes() {
     return (
         
         <>
-            <Jquery/>
             
             <ElementForm>
                 
