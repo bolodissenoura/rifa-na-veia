@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ProgressBar from '../ProgressBar';
 
 
 const ElementCard = styled.div`
@@ -105,8 +106,7 @@ export default function Card() {
                         </div>
                         <hr />
                         <div className="footer">
-                            <h2>Sorteado</h2>
-                            <h2><span>@daniellimae</span> <span className='number'>1000</span></h2>
+                            <ProgressBar/>
                             <button className="bt-default participar" role="button">
                                 PARTICIPAR
                             </button>
@@ -139,6 +139,19 @@ export default function Card() {
                     <div className="img-content">
                     </div>
                     <ElementText>
+                        <h1>JOGA 1 GANHA R$300</h1>
+                        <div className="subtitle">
+                            <h2>Data do Sorteio: <span>28/02/2022</span> </h2>
+                            <h2>Valor: <span>R$ 1,00</span> </h2>
+                        </div>
+                        <hr />
+                        <div className="footer">
+                            <h2>Sorteado</h2>
+                            <h2><span>@daniellimae</span> <span className='number'>1000</span></h2>
+                            <button className="bt-default encerrado" role="button">
+                                ENCERRADO
+                            </button>
+                        </div>
 
                     </ElementText>
                 </div>
