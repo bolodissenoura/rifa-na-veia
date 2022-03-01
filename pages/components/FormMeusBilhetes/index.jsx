@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import React, { useState } from "react";
 
 const ElementForm = styled.div`
     .no-arrow {
@@ -14,23 +15,36 @@ const ElementForm = styled.div`
 }
 `;
 
+const maskPhone = (value) => {
+  return value
+    .replace(/\D/g, "")
+    .replace(/(\d{2})(\d)/, "($1) $2")
+    .replace(/(\d{5})(\d)/, "$1-$2")
+    .replace(/(-\d{4})(\d+?)$/, "$1");
+};
+
 
 
 
 export default function FormMeusBilhetes() {
-    return (
-        
-        <>
-            
-            <ElementForm>
-                
-                <form action="">
-                    <input type="text" className="form-control" placeholder="Celular" id="celular" name="celular" />
-                </form>
-                
-            </ElementForm>
-        </>
-    )
+  const [phone, setPhone] = useState("");
+  return (
+
+    <>
+
+      <ElementForm>
+
+        <form action="">
+          <input
+            value={phone}
+            onChange={(e) => setPhone(maskPhone(e.target.value))}
+            placeholder="Telefone - formato: (00) 00000-0000"
+          />
+        </form>
+
+      </ElementForm>
+    </>
+  )
 
 }
 
